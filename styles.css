@@ -1,0 +1,285 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100em;
+    background-color: #dadada;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 1.5em;
+
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+
+    color: white;
+    font-family: 'inter-regular';
+
+    width: 100%;
+
+    scroll-behavior: smooth;
+    animation: aparecer .4s ease;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+    color: white;
+}
+
+.header nav a {
+    color: white;
+}
+
+.header a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.sobreMim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'inter-regular';
+    font-size: 1em;
+
+    margin: 2em 0 0 0;
+}
+
+.h1-helloWorld {
+    font-family: 'inter-bold';
+    margin: 1em 0 2em 0;
+    animation: aparecer .4s ease;
+}
+
+.sobreMim .div-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70%;
+}
+
+.p-sec1 {
+    width: 20%;
+    animation: esquerda-direita .4s .2s ease;
+}
+
+.img-sec1 {
+    width: 130px;
+    height: auto;
+
+    animation: float-lateral 4s infinite ease-in-out;
+}
+
+.sobreMim .div-2 {
+    display: flex;
+    flex-direction: column;
+    width: 37%;
+
+    margin-top: 4.5em;
+}
+
+.div-2-p1 {
+    animation: cima-baixo .4s .2s ease;
+    margin-top: .2em;
+
+}
+
+.div-2-p2 {
+    animation: baixo-cima .4s .2s ease;
+    margin-top: 1em;
+}
+
+@keyframes aparecer {
+    0%      { opacity: 30%   }
+    50%     { opacity: 80%  }
+    100%    { opacity: 100% }
+}   
+
+@keyframes direita-esquerda {
+    0% {
+        opacity: 30%;
+        transform: translateX(2em);
+    }
+
+    50% {
+        opacity: 80%;
+        transform: translateX(1em);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateX(0);
+    }
+}
+
+@keyframes esquerda-direita {
+    0% {
+        opacity: 30%;
+        transform: translateX(-2em);
+    }
+
+    50% {
+        opacity: 80%;
+        transform: translateX(-1em);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateX(0);
+    }
+}
+
+@keyframes cima-baixo {
+    0% {
+        opacity: 30%;
+        transform: translateY(-.5em);
+    }
+
+    50% {
+        opacity: 80%;
+        transform: translateY(-.2em);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateX(0);
+    }
+}
+
+@keyframes baixo-cima {
+    0% {
+        opacity: 30%;
+        transform: translateY(.5em);
+    }
+
+    50% {
+        opacity: 80%;
+        transform: translateY(.2em);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateX(0);
+    }
+}
+
+@keyframes float-lateral {
+    0% { transform: translateX(0);}
+    25% { transform: translateX(-.8em);}
+    50% { transform: translateX(0em);}
+    75% { transform: translateX(.8em);}
+    100% { transform: translateX(0);}
+}
+
+
+
+
+
+.series-favoritas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: 'inter-regular';
+    width: 100%;
+
+    margin: 4em 0 0 0;
+}
+
+.series-favoritas div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2em 0 0 0;
+
+    width: 70%;
+
+    .b-seriesFavoritas {
+        transition: .2s;
+    }
+
+    .b-seriesFavoritas:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}
+
+.series-favoritas div b {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .img-teenWolf {
+        height: 365px;
+    }
+
+    .img-theHundred {
+        height: 355px;
+    }
+}
+
+
+
+
+.jogos-mais-jogados {
+    font-family: 'inter-regular';
+    margin: 5em 0 0 0;
+}
+
+.jogos-mais-jogados ol li{
+    margin: 1em 0 0 0;
+}
+
+
+
+
+.musicas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: 'inter-regular';
+    margin: 7em 0 3em 0;
+}
+
+.musicas p {
+    margin: 0 0 1em 0;
+}
+
+.musicas ol li{
+    margin-top: 1em;
+}
+
+
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    font-family: 'inter-regular';
+    font-size: .8em;
+
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+
+    padding: 3em;
+    margin: 2em 0 0 0;
+    width: 100%;
+
+    color: #dadada;
+}

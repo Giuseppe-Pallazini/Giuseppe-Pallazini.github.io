@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'inter-thin';
+    src: url('./assets/fonts/Inter-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: 'inter-regular';
+    src: url('./assets/fonts/Inter-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'inter-bold';
+    src: url('./assets/fonts/Inter-SemiBold.ttf');
+}
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
